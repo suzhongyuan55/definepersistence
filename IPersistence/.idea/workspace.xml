@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f44619a3-41c3-48a3-9c1f-21dfa57b4307" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/WorkSoft/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\WorkSoft\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j2lWttetxNBwWFoFRpe1WraUpQ" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/szy/utils" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\idea\mybatis\IPersistence\src\main\java\com\szy\utils" />
+      <recent name="E:\workspace\idea\mybatis\IPersistence\src\main\java\com\szy\config\utils" />
+      <recent name="E:\workspace\idea\mybatis\IPersistence\src\main\java\com\szy\config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.szy.sqlsession" />
+      <recent name="com.szy.config" />
+      <recent name="com.szy.config.sqlsession" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f44619a3-41c3-48a3-9c1f-21dfa57b4307" name="Default Changelist" comment="" />
+      <created>1603010101917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603010101917</updated>
+      <workItem from="1603010106621" duration="11436000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1603012483138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1603012483138" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1603115682560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603115682560" />
+    <state x="583" y="443" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603118186153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="443" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603118186153" />
+    <state width="1877" height="159" key="GridCell.Tab.0.bottom" timestamp="1603119820973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="159" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603119820973" />
+    <state width="1877" height="159" key="GridCell.Tab.0.center" timestamp="1603119820973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="159" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603119820973" />
+    <state width="1877" height="159" key="GridCell.Tab.0.left" timestamp="1603119820971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="159" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603119820971" />
+    <state width="1877" height="159" key="GridCell.Tab.0.right" timestamp="1603119820973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="159" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603119820973" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1603012523562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603012523562" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603012494051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1603012494051" />
+    <state x="335" y="180" key="new project wizard" timestamp="1603010305758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="335" y="180" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603010305758" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1603115923589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603115923589" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603015326052">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603015326052" />
+  </component>
+</project>
