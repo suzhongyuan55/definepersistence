@@ -3,6 +3,7 @@ package com.szy.sqlsession;
 import com.szy.pojo.DataBaseConfiguration;
 import com.szy.pojo.MappedStatement;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
@@ -13,5 +14,5 @@ import java.util.List;
  */
 public interface QueryExecutor {
 
-    <E> List<E> query(DataBaseConfiguration configuration, MappedStatement statement, Object... params) throws SQLException, IllegalAccessException, NoSuchFieldException, ClassNotFoundException;
+    <E> List<E> query(DataBaseConfiguration configuration, MappedStatement statement, Object... params) throws SQLException, IllegalAccessException, NoSuchFieldException, ClassNotFoundException, InvocationTargetException;
 }

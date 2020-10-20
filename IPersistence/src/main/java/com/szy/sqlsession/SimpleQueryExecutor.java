@@ -7,10 +7,11 @@ import com.szy.utils.GenericTokenParser;
 import com.szy.utils.ParameterMapping;
 import com.szy.utils.ParameterMappingTokenHandler;
 
+import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.sql.*;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ import java.util.List;
  */
 public class SimpleQueryExecutor implements QueryExecutor {
 
-    public <E> List<E> query(DataBaseConfiguration configuration, MappedStatement statement, Object... params) throws SQLException, IllegalAccessException, NoSuchFieldException, ClassNotFoundException {
+    public <E> List<E> query(DataBaseConfiguration configuration, MappedStatement statement, Object... params) throws SQLException, IllegalAccessException, NoSuchFieldException, ClassNotFoundException, InvocationTargetException {
         // 1.建立连接
         Connection connection = configuration.getDataSource().getConnection();
 
@@ -45,15 +46,37 @@ public class SimpleQueryExecutor implements QueryExecutor {
             // 设置暴力访问
             declaredField.setAccessible(true);
             Object o = declaredField.get(params[0]);
-            preparedStatement.setObject(i+1, o);
+            preparedStatement.setObject(i + 1, o);
         }
+
+        // 6.执行sql
+        ResultSet resultSet = preparedStatement.executeQuery();
+        Class<?> classType = getClassType(statement.getResultType());
+        Object o = classType.newInstance();
+
+        // 7.遍历封装结果集
+        while (resultSet.next()) {
+            ResultSetMetaData metaData = resultSet.getMetaData();
+            for (int i = 0; i < metaData.getColumnCount(); i++) {
+                // 字段名
+                String columnName = metaData.getColumnName(i);
+                // 字段值
+                Object value = resultSet.getObject(columnName);
+
+                // 使用反射或内省，根据数据库表和实体的对应关系，完成封装
+                PropertyDescriptor propertyDescriptor = new PropertyDescriptor(columnName);
+                Method writeMethod = propertyDescriptor.getWriteMethod();
+                writeMethod.invoke(o, value);
+            }
+        }
+
 
         return null;
     }
 
     private Class<?> getClassType(String paramterType) throws ClassNotFoundException {
         Class<?> aClass = null;
-        if(paramterType != null){
+        if (paramterType != null) {
             aClass = Class.forName(paramterType);
         }
         return aClass;
