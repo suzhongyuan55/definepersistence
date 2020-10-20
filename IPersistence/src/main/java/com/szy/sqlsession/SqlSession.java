@@ -25,4 +25,11 @@ public interface SqlSession {
      * @param <T>
      */
     <T>T selectOne(String statementId, Object... params);
+
+    /**
+     * 获取代理对象
+     * @param <T>
+     * @return
+     */
+    <T>T getInvoke(Class<?> mapperClass);
 }

@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f44619a3-41c3-48a3-9c1f-21dfa57b4307" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/szy/sqlsession/QueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/szy/sqlsession/QueryExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/szy/sqlsession/SimpleQueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/szy/sqlsession/SimpleQueryExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/szy/sqlsession/SqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/szy/sqlsession/SqlSession.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +91,23 @@
       <updated>1603010101917</updated>
       <workItem from="1603010106621" duration="11436000" />
       <workItem from="1603194232858" duration="358000" />
-      <workItem from="1603204876260" duration="636000" />
+      <workItem from="1603204876260" duration="1733000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1603012483138">
@@ -115,6 +146,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1603012494051" />
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603205682574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603205682574" />
     <state x="335" y="180" key="new project wizard" timestamp="1603010305758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

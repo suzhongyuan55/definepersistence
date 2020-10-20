@@ -2,6 +2,9 @@ package com.szy.sqlsession;
 
 import com.szy.pojo.DataBaseConfiguration;
 
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 import java.util.List;
 
 /**
@@ -30,5 +33,19 @@ public class DefaultSqlSession implements SqlSession {
             throw new RuntimeException("查询结果过多");
         }
         return (T) result.get(0);
+    }
+
+    @Override
+    public <T> T getInvoke(Class<?> mapperClass) {
+        Object o = Proxy.newProxyInstance(DefaultSqlSession.class.getClassLoader(), new Class[]{mapperClass}, new InvocationHandler() {
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+
+                return null;
+            }
+        });
+
+
+        return null;
     }
 }

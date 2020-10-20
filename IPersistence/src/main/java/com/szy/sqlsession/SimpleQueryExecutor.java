@@ -12,6 +12,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ import java.util.List;
  */
 public class SimpleQueryExecutor implements QueryExecutor {
 
-    public <E> List<E> query(DataBaseConfiguration configuration, MappedStatement statement, Object... params) throws SQLException, IllegalAccessException, NoSuchFieldException, ClassNotFoundException, InvocationTargetException {
+    public <E> List<E> query(DataBaseConfiguration configuration, MappedStatement statement, Object... params) throws SQLException, IllegalAccessException, NoSuchFieldException, ClassNotFoundException, InvocationTargetException, InstantiationException {
         // 1.建立连接
         Connection connection = configuration.getDataSource().getConnection();
 
@@ -52,10 +53,11 @@ public class SimpleQueryExecutor implements QueryExecutor {
         // 6.执行sql
         ResultSet resultSet = preparedStatement.executeQuery();
         Class<?> classType = getClassType(statement.getResultType());
-        Object o = classType.newInstance();
+        List list = new ArrayList();
 
         // 7.遍历封装结果集
         while (resultSet.next()) {
+            Object o = classType.newInstance();
             ResultSetMetaData metaData = resultSet.getMetaData();
             for (int i = 0; i < metaData.getColumnCount(); i++) {
                 // 字段名
@@ -68,10 +70,11 @@ public class SimpleQueryExecutor implements QueryExecutor {
                 Method writeMethod = propertyDescriptor.getWriteMethod();
                 writeMethod.invoke(o, value);
             }
+            list.add(o);
         }
 
 
-        return null;
+        return list;
     }
 
     private Class<?> getClassType(String paramterType) throws ClassNotFoundException {
